@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+    <title>Для медитации</title>
+    <!-- Фавиконка -->
+    <link rel="icon" sizes="60x60" href="favicons/favicon-60x60.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicons/favicon-32x32.png" type="image/png">
+    <!-- Файл со стилями -->
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="head_lecenses">
+        <!-- Уведомление -->
+        <div class="menu">
+        <input type="checkbox" id="mail-checkbox" class="mail-checkbox">
+        <label for="mail-checkbox" class="mail">
+          <button class="icon-button">
+            <img id="phone-handset" src="img/Трубка телефона.png">
+            <span class="badge">2</span>
+          </button>
+        </label>
+        <ol class="menu-list-mail">
+          <li><a class="menu-item-mail">Ответ на ваш отзыв</a></li>
+          <li><a class="menu-item-mail">Ваша запись на курс одобрена</a></li>
+        </ol>
+        </div>
+        <h1 class="main_title">Лотос - сайт для медитаций</h1>
+        <br>
+
+        <nav>
+            <ul class="top">
+                <li><a class="dark-mode" href = "registration.html">Вход в аккаунт</a>
+                <li><a class="dark-mode" href = "lecenses.html">Наши занятия</a>
+                <li><a class="dark-mode" href = "index.html">Главная страница</a>
+            </ul>
+        </nav>
+
+        <button class="cart_another button1" id="cart_another" onclick="location.href='shop.html'">
+          <i class="fa fa-reply" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <main class="container_for_bucket"> 
+    <div class="body">
+      <div class="container_for_bucket">
+        <h3 class="heading">Продукция</h3>
+        <div class="result"></div>
+      </div>
+      <div class="cart">
+        <div class="cart-header">
+          <h3>Корзина</h3>
+          <p class="noOfItems">Количество: 0</p>
+        </div>
+        <hr noshade="true" size="1px" />
+        <div class="cart-items"></div>
+        <hr noshade="true" size="1px" />
+        <div class="cart-footer cart-header">
+          <h3>В итоге: </h3>
+          <p class="total">0 руб</p>
+        </div>
+        <button class="buy-btn button1">Купить!</button>
+      </div>
+    </div>
+
+    </main>
+    <script src="scripts/shop.js"></script>
+  </body>

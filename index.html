@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+    <title>Для медитации</title>
+    <!-- Фавиконка -->
+    <link rel="icon" sizes="60x60" href="favicons/favicon-60x60.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicons/favicon-32x32.png" type="image/png">
+    <!-- Файл со стилями -->
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Скрипты-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  </head>
+  
+  <body>
+    <header>
+      <div class="triangle-place">
+        <p id="triangle"></p>
+      </div>
+      <div class="lotos-wrap">
+        <img src="img/картинка лотоса.png" id = "lotos">
+      </div>
+      <!-- Уведомление -->
+      <div class="menu">
+        <input type="checkbox" id="mail-checkbox" class="mail-checkbox">
+        <label for="mail-checkbox" class="mail">
+          <button class="icon-button">
+            <img id="phone-handset" src="img/Трубка телефона.png">
+            <span class="badge">2</span>
+          </button>
+        </label>
+        <ol class="menu-list-mail">
+          <li><a class="menu-item-mail">Ответ на ваш отзыв</a></li>
+          <li><a class="menu-item-mail">Ваша запись на курс одобрена</a></li>
+        </ol>
+      </div>
+      <!-- Бургер -->
+      <div class="menu">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger"></label>
+        <ol class="menu-list">
+          <h2>Содержание:</h2>
+          <li><a  href="#Topic1" class="menu-item">Информация, с которой интересно ознакомиться</a></li>
+          <li><a  href="#Topic2" class="menu-item">Польза, подверждённая учёными</a></li>
+          <ul>
+            <li><a href="#SmallTopic21" class="menu-item">Влияние медитации на мозг человека</a></li>
+            <li><a  href="#SmallTopic22" class="menu-item">Личностные изменения</a></li>
+            <li><a href="#SmallTopic23" class="menu-item">Противопоказания</a></li>
+          </ul>
+          <li><a  href="#Topic3" class="menu-item">Медитативные сессии для начинающих</a></li>
+        </ol>
+      </div>
+      <h1 class="main_title">Лотос - сайт для медитаций</h1>
+      <br>
+      <nav>
+      <!-- Переход на други страницы. -->
+        <ul class="top">
+          <li><a href = "registration.html" class="dark-mode">Вход в аккаунт</a>
+          <li><a class="dark-mode" href = "shop.html">Магазин</a>
+          <li><a href = "lecenses.html" class="dark-mode">Наши занятия</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Вступление -->
+       <div class="field-gallery side_thing">
+        <div class="field-gallery__item field-gallery__item--1">
+          <img src="img/Поля с луной.jpg" alt="Gallery image 1" class="gallery__img">
+          <div class="field-caption--1">
+            <h1 id="HeadTopic">Медитация - погружение в глубины разума</h1>
+            <br>
+            <p class="dark-mode">Вам давно было интересно погрузиться в занимательную тему <i>медитаций</i>,
+            но всё никак не удавалось выкрасть время в бурном потоке жизни? Теперь ваше время пришло! 
+            На данной интернет-страничке вы узнаете историю медитативных практик, 
+            что о медитации думают врачи, советы для начинающих и подбор подходящих звуковых дорожек, 
+            которые ещё <em>лучше</em> помогут вам погрузиться в тему.</p>
+          </div>
+        </div>
+       </div>
+      <!-- Боковая панель -->
+      <aside>
+        <br>
+        <h3>Список статей по теме: </h3>
+          <ul>
+            <li><a class="side-mode side-mode-1" href="https://www.sportmaster.ru/media/articles/kak-pravilno-meditirovat/?utm_referrer=https://yandex.ru/">Как правильно медитировать</a></li>
+            <li><a class="side-mode side-mode-2" href="https://www.sportmaster.ru/media/articles/kak-pravilno-meditirovat/?utm_referrer=https://yandex.ru/">Как правильно медитировать начинающему в домашних условиях</a></li>
+            <li><a class="side-mode side-mode-3" href="https://megapteka.ru/specials/meditacii-polza-i-6156">Медитации польза и вред: советы и рекомендации</a></li>
+            <li><a class="side-mode side-mode-4" href="https://www.kontur-extern.ru/info/6392">Шесть трехминутных медитаций, чтобы успокоиться и сосредоточиться</a></li>
+          </ul>
+          <div id="clouds-and-field">
+            <img src="img/Поле с облаками.png">
+          </div>
+      </aside>
+      <!-- Зелёная хрень с картинкой -->
+      <div class="side">
+        <h2 id="Topic1">Информация, с которой интересно ознакомиться</h2>
+        <br>
+        <!-- Картинка -->
+        <div style="text-align: center;">
+          <img src="img/Кувшинки2.jpg" alt="Кувшинки" width="500" height="400">
+        </div>
+        <blockquote class="dark-mode">
+          <b>Медита́ция</b> (лат. <i>meditatio</i> – размышление, подготовка), процесс достижения состояния углублённой сосредоточенности с целью интеллектуально-духовной интериоризации некоторого объекта (идеи, истины, образа, символа).
+          В психологическом аспекте медитация предполагает устранение крайних эмоциональных проявлений и 
+          понижение реактивности. Может рассматриваться как вид созерцания (лат. <i>contemplatio</i>), но 
+          отличается тем, что сопровождается упражнениями и проходит различные стадии, как правило под 
+          руководством учителя.
+        </blockquote>
+        <a class="dark-mode" href="https://bigenc.ru/c/meditatsiia-db187e?ysclid=mf46669ivi830964319">
+          <sub>Источник: Большая российская энциклопедия </sub>
+        </a>
+        <p style="color: rgb(93, 105, 57); margin-left: 40px;">fgdfdsgf</p>
+      </div>
+      <!-- Умные слова учёных -->
+      <div class="side_thing" id = "item">
+        <h2 id="Topic2">Польза, подверждённая учёными</h2>
+        <p>
+        Кто-то может сказать, что медитация - <u>совершенно бесполезная трата времени</u>, но это не так!<br>
+        В современном мире есть много поводов для переживаний: 
+        каждый пятый россиянин в возрасте от 35 до 74 лет регулярно испытывает высокий уровень стресса. 
+        Это состояние может стать причиной разных заболеваний: от <b>гипертонии</b> до 
+        <b>сахарного диабета II типа</b>. 
+        <br>
+        Медитации, если научиться их правильно использовать, 
+        могут стать эффективным способом управлять вниманием и настроением. 
+        Этот инструмент доступен каждому независимо от возраста, пола и социального статуса. 
+        Есть много исследований, подтвердивших пользу медитаций для увеличения силы разума и воли, 
+        борьбы со стрессом, облегчения тревожности. 
+        </p>
+
+        <h3 id="SmallTopic21">Влияние медитации на мозг человека</h3>
+        <p>В привычном состоянии сознания, нейроны мозга работают в одном ритме. Когда перегружаются, устают, начинаются проблемы: </p>
+          <ul>
+            <li>Блуждание ума, когда человек не думает ни о чём конкретном.</li>
+            <li>Мысли в голове скачут, не задерживаются, не дают довести себя до логического завершения. Это заставляет мозг расходовать ещё больше ресурсов.</li>
+            <li>Теряется способность к сосредоточению над поставленной задачей, целью.</li>
+          </ul>
+        <p>
+        Описанные проявления, на самом деле, очевидны детям и взрослым, которые ими страдают. В итоге у человека снижается самооценка, состояние духа становится угнетенным.
+        <br>
+        Если вы склонны впадать в такое состояние, то в скором времени заметите ухудшение <b>когнитивных функций</b>. Постоянным спутником станет плохое настроение и развитие психологического дискомфорта. 
+        <br><br>
+        Суть медитативных практик в предельном сосредоточении. Такая техника способствует тренировке такой когнитивной функции мозга, как умение удерживать внимание, избавляться от рассеянности.
+        <br>
+        Каждый раз вы тренируете этот навык. Постепенно, применять его в быту и на работе становится легче. Производительность организма повышается уже после 3-6 недель регулярных занятий.
+        <br><br>
+        Дополнительная польза медитации для мозга – наше спокойствие. Медитативные практики – это тренировка мозга, в процессе которой постепенно снимается излишняя <b>психологическая напряжённость</b>.
+        <br>
+        Есть наблюдения, что <b>состояние отрешённой сосредоточенности</b>, по воздействию на организм человека, равноценно по силе антидепрессантам.
+        <br>
+        Это не означает, что разбалансированное психологическое состояние всегда получится вылечить одной только ежедневной медитацией. Да, иногда — исправит ситуацию, иногда – ослабит негативную симптоматику. Однако к подобному средству стоит обращаться после консультации у врача в специализированной клинике.
+        </p>
+        <h3 id="SmallTopic22">Личностные изменения</h3>
+        <p>
+        Рассматривая, как влияет медитация на человека, нельзя упускать те особенности, 
+        которые будут заметны окружающим. К ним относятся и постепенные личностные изменения, 
+        накапливающиеся со временем при регулярных занятиях.
+        </p>
+        <ul>
+          <li>Становится доброжелательнее и терпимее как с близкими, так и с незнакомыми людьми. </li>
+          <li>Пропадает мелочная раздражительность. </li>
+          <li>Развивается эмпатия, вам будет легче понимать чувства окружающих и сопереживать им. </li>
+          <li>Пропадёт чувство разочарования. Жизненные неприятности и неудачи будут переноситься проще, приниматься как уроки, а не как однозначная неудача. </li>
+          <li>Повысится самооценка, так как снизится уровень чрезмерной самокритики. Человек сможет принимать и любить себя таким, какой он есть. </li>
+        </ul>
+        <p>
+          По словам практикующего психолога <cite>Юлии Керецман</cite>, 
+          даже 15 минут в день могут стать значимым вкладом в улучшение общего самочувствия и качества жизни.
+          <br>
+          <q>
+          Кто-то замечает положительные изменения уже после короткого периода: приходит ясность ума, 
+          расслабление, реакции на повседневные стрессовые ситуации становятся более гибкими.
+          </q>
+        </p>
+
+        <h3 id="SmallTopic23">Противопоказания</h3>
+        <p>
+        Медитация приносит несомненную пользу для мозга человека, 
+        но абсолютно положительных вещей без возможных побочных эффектов не существует.
+        <br>
+        При использовании медитативных техник отдельные люди могут усугубить своё состояние. 
+        Есть психические патологии, которые на фоне медитативных практик прогрессируют. 
+        Вплоть до суицидальных мыслей и действий.
+        <br>
+        Ввиду специфики влияния на сознание и состояние мозга человека, 
+        подобные практики не рекомендуется применять категориям людей, 
+        страдающим такими психическими расстройствами: шизофрения или психозы, депрессия или 
+        <abbr title="Биполярное аффективное расстройство">БАР</abbr>, 
+        травматические события породившие <abbr title="Посттравматическое стрессовое расстройство">
+        ПТСР</abbr> и <abbr title="Пограничное расстройство личности">ПРЛ</abbr>, 
+        а также панические атаки
+        <br>
+        <strong>Пожалуйста, проконсультируйтесь со специалистом!</strong> 
+        </p>
+      </div>
+      <!-- Советы -->
+      <div class="side_thing" id ="item">
+        <h2 id="Topic3">Медитативные сессии для начинающих</h2>
+        <p>
+        Найдите место, где вас не будут отвлекать. Это может быть спальня, 
+        скамейка в парке или другая локация, где тихо и спокойно. Сядьте в удобную позу. 
+        Некоторые предпочитают медитировать в кресле, другие — на полу в позе лотоса. 
+        Ложиться не рекомендуется — вы можете уснуть. Закройте глаза, 
+        чтобы уменьшить влияние отвлекающих факторов и сосредоточиться на том, что у вас внутри.
+        <br>
+        Дыхание — самая важная часть медитации, ее основа. 
+        Сконцентрируйтесь на медленных и глубоких вдохах и выдохах. 
+        Ощущайте движение воздуха через нос и в груди.
+        <br>
+        Цель медитации — развитие осознанности и присутствие в текущем моменте без мыслей 
+        о неопределенности будущего или упущениях прошлого, которые и вызывают тревогу. 
+        Поэтому во время практики фиксируйте ощущения и эмоции здесь и сейчас. 
+        Разрешите им просто существовать, не придавая особого значения. 
+        Если ваши мысли начинают блуждать, не ругайте себя — просто возвращайтесь к наблюдению за дыханием 
+        и ощущениями.
+        <br>
+        Определите длительность медитации. Начните с небольших сессий на 5-10 минут и постепенно 
+        увеличивайте продолжительность. Важно практиковать регулярно. Постарайтесь уделять время медитации 
+        каждый день: это навык, который нужно прокачивать.
+        <br>
+        </p>
+      </div>
+      <!-- Виды практик + кнопочки -->
+      <h3 class="side_thing">Виды практик, которые можно использовать новичкам: </h3>
+      <div class="side_thing types-of-practics center-container">
+        <div class="card_three transition" id="card1">
+          <h2 class="transition card_wrap_first_type">Дыхательные практики</h2>
+          <p  class="card_wrap_first_type"></p>
+          <div class="cta-container transition"><a href="https://newneuro.ru/raznoobrazie-metodik-dyhatelnoj-relaksaczii/" class="cta">Узнать больше</a></div>
+          <div class="card_circle transition"></div>
+        </div>
+        
+        <div class="card_three transition" id="card2">
+          <h2 class="transition card_wrap_first_type">Упражнения и позы</h2>
+          <p class="card_wrap_first_type"></p>
+          <div class="cta-container transition"><a href="https://yoga-academy.online/blog/meditativnie-asani" class="cta">Узнать больше</a></div>
+          <div class="card_circle transition"></div>
+        </div>
+
+        <div class="card_three transition" id="card3">
+          <h2 class="transition card_wrap_first_type">Мантры и музыка</h2>
+          <p class="card_wrap_first_type"></p>
+          <div class="cta-container transition"><a href="https://uppbeat.io/music/category/spiritual/meditation" class="cta">Узнать больше</a></div>
+          <div class="card_circle transition"></div>
+        </div>
+      </div>
+
+      <h3 class="side_thing" id="types-of-breathing">Виды дыхательных практик: </h3>
+      <div class="side_thing types-of-practics">
+        <div class="container-for-second-type">
+          <div class="box-for-second-type">
+            <span></span>
+            <div class="content-for-second-type">
+              <h2>Дыхание 4-7-8</h2>
+              <p>Вдыхайте на 4 счета, задержите дыхание на 7, выдыхайте на 8. Повторите 4-8 раз для быстрого успокоения.</p>
+              <a href="https://www.b17.ru/article/656278/">Узнать больше</a>
+            </div>
+          </div>
+          <div class="box-for-second-type">
+            <span></span>
+            <div class="content-for-second-type">
+              <h2>Box Breathing</h2>
+              <p>Вдыхайте на счет 4, задержите дыхание на счет 4, выдыхайте на счет 4 и снова задержите дыхание на счет 4. Повторяйте цикл в течение нескольких минут.</p>
+              <a href="https://www.verywellhealth.com/box-breathing-8423967">Узнать больше</a>
+            </div>
+          </div>
+          <div class="box-for-second-type">
+            <span></span>
+            <div class="content-for-second-type">
+              <h2>Диафрагмальное дыхание</h2>
+              <p>Положите одну руку на грудь, другую на живот. Медленно вдыхайте через нос, чувствуя, как живот поднимается, а грудь остается относительно неподвижной.</p>
+              <a href="https://oppl.ru/2017-vyipusk-7/afonina-ne-diafragmalnoe-dyihanie.html">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="side_thing_footer">
+        <div class="footer-gallery">
+          <div class="gallery__item footer-gallery__item--1">
+            <a class="dark-mode" href="tel:01234567890">Контактный номер</a> <br> <a class="dark-mode" href="mailto:sendemail@gmail.com">Контактная почта</a>
+
+            <div class="animated_share"> 
+              <div class="animated_share_btn">
+                <a href="#"><i class="fa fa-telegram"></i></a>
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__item footer-gallety__item--2">
+            <p class="dark-mode">Оцените сайт!</p>
+            <button class="like__btn button1">
+              <span id="icon"><i class="fa fa-heart-o"></i></span>
+              <span id="count">0</span> Like
+            </button>
+          </div>
+          <div class="gallery__item footer-gallety__item--3 dark-mode">
+            <p class="dark-mode">
+              Работа выполнена студенткой 2 курса<br>©Никакие права не защищены<br>
+              <i class="fa fa-street-view" aria-hidden="true"></i> Местоположение: Неизвестно<br>
+              <i class="fa fa-commenting" aria-hidden="true"></i> Не советую верить информации, предоставленной на данном сайте<br>
+              Лучше обратитесь к специалисту.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/like.js"></script>
+  </body>
+</html>
